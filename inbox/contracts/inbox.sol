@@ -13,6 +13,7 @@ contract Inbox{
  }
  
 // this duplicates "string public message;" 
+// function name = getMessage no parameters returns a string
 // function getMessage() public view returns(string) {
 //     return message;
 // }
