@@ -1,3 +1,6 @@
+// path module and fs (file system) should be standard 
+// node comple.js from command line
+// or right click and run as node.js application 
 // import standard modules to read the .sol file
 const path = require('path'); //path info 
 const fs = require('fs'); //file system functions

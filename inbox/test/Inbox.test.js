@@ -7,7 +7,7 @@ const Web3 = require('web3'); //constructor function
 //instance of web3
 const web3 = new Web3(ganache.provider());
 
-//mocha Functions 
+// mocha Functions for general testing
 // (1)it[assert and test]  
 // (2)describe[group together it(1)] 
 // (3)beforeEach [set up ]
@@ -31,8 +31,10 @@ describe('CarUnitTest', () => {
 				const car = new Car();
 				assert.equal(car.parked(),'stopped');
 			})
+			it('MovingTest',() =>{
+				//test set up and assertion logic
+				const car = new Car();
+				assert.equal(car.drive(),'vroom');
+			})
 			
-			
-		}
-
-		); //end describe
+		}); //end describe
