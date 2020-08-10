@@ -24,15 +24,16 @@ class Car {
 }
 
 //parameters (test group name, arrow function)
+//arrow function is like in line code
 describe('CarUnitTest', () => {
 			//to test park function
 			it('ParkedTest',() =>{
-				//test set up and assertion logic
+				//test set up park and assertion logic
 				const car = new Car();
-				assert.equal(car.parked(),'stopped');
+				assert.equal(car.park(),'stopped');
 			})
 			it('MovingTest',() =>{
-				//test set up and assertion logic
+				//test set up drive and assertion logic
 				const car = new Car();
 				assert.equal(car.drive(),'vroom');
 			})
